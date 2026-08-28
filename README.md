@@ -1,1 +1,19 @@
 # huerta-
+CREATE DATABASE huerta;
+
+USE huerta;
+
+CREATE TABLE humedad (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    valor DECIMAL(5,2) NOT NULL
+);
+
+CREATE TABLE suelo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estado VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE temperatura (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    valor DECIMAL(5,2) NOT NULL
+);
